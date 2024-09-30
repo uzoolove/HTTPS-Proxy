@@ -2,6 +2,7 @@
 
 # proxy
 cd ~/HTTPS-proxy
+sudo pm2 stop proxy || true
 sudo pm2 start --name proxy "npm start"
 
 # target server
