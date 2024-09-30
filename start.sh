@@ -2,8 +2,7 @@
 
 # proxy
 cd ~/HTTPS-proxy
-sudo pm2 stop proxy || true
-sudo pm2 start --name proxy "npm start"
+sudo pm2 startOrRestart npm --name "proxy" -- start
 
 # target server
 # cd ~/fesp02-nextlevel
